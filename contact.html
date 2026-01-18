@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suluxan|Contact</title>
+
+  <style>
+        body{
+            font-family: Arial, sans-serif;
+          
+            padding: 0;
+            background-color: #f8f9fa;
+           color: #3d3c3c;
+        }
+        header{
+             background-color: #055fd4;
+             color: white;
+             text-align: center;
+             padding: 20px;
+            border-radius:20px;
+            margin: 20px;
+          
+         
+        }
+        main{
+
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+
+        .menu a{
+            
+            color: white;
+            margin: 0 10px; 
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .menu a:hover,
+        .menu a.active{
+            text-decoration: underline ;
+        }
+
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+        input,
+        textarea,
+        button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #004aad;
+            color: white;
+            cursor: pointer;
+        }
+
+          button:hover {
+            background-color: #0066ff;
+        }
+
+
+
+        footer{
+            text-align: center;
+            background-color: #055fd4;
+            color: white;
+           
+            margin-top: 100px;
+    
+        }
+
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+    
+    <header>
+        <h1>Contact Gegevens</h1>
+        <div class="menu">
+            
+            <a href="index.html" >Home </a>
+            <a href="cv.html"> CV </a>
+            <a href="experience.html"> Ervaringen </a>
+            <a href="hobbies.html" > Hobbies </a>
+            <a href="contact.html" class="active"> Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Neem Contact Op</h2>
+        <p>Als u contact met mij wilt opnemen, gebruik dan het onderstaande formulier.</p>
+
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+         <h3>Other Ways to Reach Me</h3>
+        <ul>
+            <li>Email: suluxant@gmail.com</li>
+            <li>Gsm : 0497/64 07 62</li>
+        </ul>
+
+    </main>
+    <footer>
+        <p>© 2025 Suluxan Thevarajah | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html> 
