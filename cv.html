@@ -1,99 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suluxan | CV</title>
-<style>
-    body{
-        font-family: Arial, sans-serif;
-          
-        padding: 0;
-        background-color: #f8f9fa;
-        color: #3d3c3c;
-    }
 
-    header{
-          background-color: #055fd4;
-             color: white;
-             text-align: center;
-             padding: 20px;
-            border-radius:20px;
-            margin: 20px;
-    }
-    .menu a{
-            
-            color: white;
-            margin: 0 10px; 
-            text-decoration: none;
-            font-weight: bold;
-
-    }
-    .menu a:hover,.menu a.active{
-        text-decoration: underline;
-    }
-
-    main{
-        padding: 20px;
-        max-width: 900px;
-       
-        margin: auto;
-    }
-    .cv-tab{
-        width: 100%;
-        margin-top: 10px;
-        border-collapse: collapse;
-    }
-   .cv-tab th, .cv-tab td{
-        border: solid #ccc 1px;
-        padding: 5px;
-        text-align: left;
-    }
-    .cv-tab th{
-        background-color: #e2eaea;
-    }
-
-    .skills-section {
-  margin: 50px 0;
-
-  background: #f8f9fa;
-
- 
-}
-
-.skills-list li {
-  margin-bottom: 8px;
-  padding-left: 25px;
-  position: relative;
-  font-size: 15px;
-  line-height: 1.5;
-}
-.software {
-  font-weight: 600;
-  color: #005bb5; /* subtle professional blue */
-}
-
-footer{
-            text-align: center;
-            background-color: #055fd4;
-            color: white;
-           
-            margin-top: 100px;
-    
-        }
-
-
-</style>
 
 </head>
 
 
 <body>
     <header>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
         <h1>Curriculum Vitae</h1>
-         <div class="menu">
-            
-            <a href="index.html" >Home </a>
+        <div class="menu">
+
+            <a href="index.html">Home </a>
             <a href="cv.html" class="active"> CV </a>
             <a href="experience.html"> Ervaringen </a>
             <a href="hobbies.html"> Hobbies </a>
@@ -103,9 +69,9 @@ footer{
 
     <main>
         <div>
-            <h2>Studies</h2>  
+            <h2>Studies</h2>
             <table class="cv-tab">
-               
+
                 <tr>
                     <th>Jaar</th>
                     <th>Opleiding</th>
@@ -131,7 +97,7 @@ footer{
                     <td>Graduaat Elektromechanica (avond)</td>
                     <td>TNA Antwerpen</td>
                 </tr>
-                 <tr>
+                <tr>
                     <td>Maart-Juni- 2019 </td>
                     <td>Klimatisatie Systemen</td>
                     <td>ATIC</td>
@@ -149,15 +115,19 @@ footer{
             </table>
         </div>
 
-        <div class="skills-section" >
-            <h2>TECHNISCHE  VAARDIGHEDEN</h2>
+        <div class="skills-section">
+            <h2>TECHNISCHE VAARDIGHEDEN</h2>
             <ul class="skills-list">
                 <li>Zeer goed ruimtelijk en technisch inzicht </li>
-                <li>Zeer grondige kennis van <span class="software"> AutoCAD 2D, 3D, Revit Architectuur, Revit MEP, StabiCAD</span> </li>
+                <li>Zeer grondige kennis van <span class="software"> AutoCAD 2D, 3D, Revit Architectuur, Revit MEP,
+                        StabiCAD</span> </li>
                 <li>kennis van<span class="software"> BIM360Docs </span></li>
-                <li>Zeer goed kennis van <span class="software"> Revit – Addin development skills en Bim Automation </span></li>
-                <li>Goede kennis van <span class="software"> Autocad/Civil 3D Addin development skills en Automation </span></li>
-                <li>Beschikt over nodige kennis van <span class="software"> Solidworks,Inventor en Navisworks </span></li>
+                <li>Zeer goed kennis van <span class="software"> Revit – Addin development skills en Bim Automation
+                    </span></li>
+                <li>Goede kennis van <span class="software"> Autocad/Civil 3D Addin development skills en Automation
+                    </span></li>
+                <li>Beschikt over nodige kennis van <span class="software"> Solidworks,Inventor en Navisworks </span>
+                </li>
                 <li>Basis kennis van <span class="software"> Tekla en Civil 3D </span></li>
             </ul>
         </div>
@@ -176,4 +146,5 @@ footer{
     </footer>
 
 </body>
+
 </html>
