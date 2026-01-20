@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -53,12 +53,13 @@
     </header>
 
 
-    <div class="container ">
+    <div class="container  ">
 
         <!-- Studies -->
-         <!--Margin collapse happens when a parent has no padding/border, 
+        <!--Margin collapse happens when a parent has no padding/border, 
          so the child’s margin-top “leaks” upward and appears outside instead of inside.
-         to test this if u put mt-5 at container, it wont work visually, actually it is collpasing.
+         to test this if u put mt-5 at container(div), it wont work visually, actually it is collpasing important: 
+         between div and section larger margin prevails.
          -->
         <section class="mt-5">
             <h2 class="border-bottom  pb-2">Studies</h2>
@@ -118,18 +119,19 @@
             <h2 class="border-bottom pb-2">Technische vaardigheden</h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">🔹 Zeer goed ruimtelijk en technisch inzicht</li>
-                <li class="list-group-item">🔹 Grondige kennis van AutoCAD 2D/3D, Revit, StabiCAD</li>
+                <li class="list-group-item">🔹 Zeer Grondige kennis van AutoCAD 2D/3D, Revit, StabiCAD</li>
                 <li class="list-group-item">🔹 Kennis van BIM360 Docs</li>
                 <li class="list-group-item">🔹 Revit Add‑ins & BIM automations</li>
+                <li class="list-group-item">🔹 kennis van Dynamo + Python voor Revit</li>
                 <li class="list-group-item">🔹 Kennis van AutoCAD/Civil3D automation</li>
-                <li class="list-group-item">🔹 Basis SolidWorks, Inventor, Navisworks</li>
-                <li class="list-group-item">🔹 Basis Tekla & Civil 3D</li>
+                <li class="list-group-item">🔹 Basis kennis SolidWorks, Inventor, Navisworks</li>
+                <li class="list-group-item">🔹 Basis kennis Tekla & Civil 3D</li>
             </ul>
         </section>
 
         <!-- Programmeertalen -->
-        <section class="mt-5 mb-5">
-            <h2 class="border-bottom pb-2">Programmeertalen</h2>
+        <section class="mt-5 mb-5 ">
+            <h2 class="border-bottom pb-">Programmeertalen</h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">C# - Goede kennis</li>
                 <li class="list-group-item"> <i class="bi bi-filetype-html"></i>&nbsp; Html - Goede kennis</li>
@@ -137,15 +139,28 @@
                 <li class="list-group-item"><i class="bi bi-filetype-py "></i>&nbsp;Python - Basis kennis</li>
                 <li class="list-group-item">📘 Batch scripting – Basis kennis</li>
             </ul>
+
+
+
+            <h2 class="border-bottom pb-2 pt-5">Talen</h2>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Nederlands – Vlot</li>
+                <li class="list-group-item">Engels – Vlot</li>
+                <li class="list-group-item">Tamil – Moedertaal</li>
+                <li class="list-group-item">Frans – Basis</li>
+            </ul>
+
+
+
+
         </section>
 
-        <footer class="text-center text-muted mt-5">
-            © 2025 Suluxan Thevarajah | All Rights Reserved
-        </footer>
+
 
     </div>
 
-    <footer>
+    <footer class="text-center text-muted mt-5">
         <p>© 2025 Suluxan Thevarajah | All Rights Reserved</p>
     </footer>
 

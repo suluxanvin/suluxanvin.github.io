@@ -1,151 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suluxan | Ervaringen</title>
-
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-          
-            padding: 0;
-            background-color: #f8f9fa;
-           color: #3d3c3c;
-        }
-        header{
-             background-color: #055fd4;
-             color: white;
-             text-align: center;
-             padding: 20px;
-            border-radius:20px;
-            margin: 20px;
-          
-         
-        }
-        main{
-
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-
-        .menu a{
-            
-            color: white;
-            margin: 0 10px; 
-            text-decoration: none;
-            font-weight: bold;
-
-        }
-
-        .menu a:hover,
-        .menu a.active{
-            text-decoration: underline ;
-        }
-
-        #portfolio-img{
-              width: 280px;
-        margin-right: 20px;
-          /*   
-            Adds 20 pixels of space to the right of the image.
-
-            */
-        }
-
-        #intro{
-            display:flex;
-            align-items: center;
-            gap: 20px;
-            /*
-                Adds 20 pixels of space between all direct children of the flex container.
-              flex:   De afbeelding en tekstblok komen naast elkaar te staan (horizontaal)
-              Before flex → items appear vertically (one under the other)
-                 With display: flex; → items appear horizontally (next to each other)
-            */
-        }
-
-        footer{
-            text-align: center;
-            background-color: #055fd4;
-            color: white;
-           
-    
-        }
-
-        .points {
-            padding-bottom: 10px;
-        }
-
-    </style>
-
-
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 
 <body>
 
- <header>
-        <h1>Ervaringen</h1>
-        <div class="menu">
-            
-            <a href="index.html">Home </a>
-            <a href="cv.html"> CV </a>
-            <a href="experience.html" class="active"> Ervaringen </a>
-            <a href="hobbies.html"> Hobbies </a>
-            <a href="contact.html"> Contact</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Suluxan Thevarajah</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+                    aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarmenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="experience.html">Ervaringen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container  my-5">
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title ">Zaakvoerder en Landbouwer in Sri Lanka (Rijst, Kokospalm)</h3>
+                <p class="card-text mt-4">
+                    Actief binnen het familiebedrijf dat zich richt op de teelt van rijst en kokosnoten.
+                    Verantwoordelijk voor diverse landbouwactiviteiten, waaronder landbeheer,
+                    irrigatieplanning, gewasbewaking, oogstcoördinatie en kwaliteitscontrole.
+                    Daarnaast betrokken bij logistieke planning, verkoop, voorraadbeheer en
+                    het onderhouden van lokale leveranciers- en afnemersrelaties.
+                </p>
+
+            </div>
         </div>
-   </header>
 
-   <main>
-    <div class="points">
-        <h2>Zaakvoerder en Landbouwer in Sri Lanka (Rijst, Kokospalm) </h2>
-        <p>Actief binnen het familiebedrijf dat zich richt op de teelt van rijst en kokosnoten.  
-      Verantwoordelijk voor diverse landbouwactiviteiten, waaronder landbeheer,  
-      irrigatieplanning, gewasbewaking, oogstcoördinatie en kwaliteitscontrole.  
-      Daarnaast betrokken bij logistieke planning, verkoop, voorraadbeheer en  
-      het onderhouden van lokale leveranciers- en afnemersrelaties.</p>
-    </div>
-    <div class="points">
-        <h2>Keukenmedewerker in AZ Klina, Brasschaat </h2>
-        <p>Meehelpen in de ziekenhuiskeuken: maaltijdvoorbereiding, portioneren volgens dieetvoorschriften, keukenhygiëne, opruimwerk en teamwork voor kwalitatieve en tijdige patiëntenmaaltijden.</p>
-    </div>
 
-    <div class="points">
-        <h2>Technische tekenaar bij JGL Engineering, Hove (Hvac + Sanitair+ Elektro) </h2>
-        <p>
-              Technische tekenaar bij JGL Engineering in Hove, gespecialiseerd in HVAC-, sanitaire en elektrische installaties. Verantwoordelijk voor het uitwerken van nauwkeurige 2D- en 3D-tekeningen, het voorbereiden van projectdocumentatie, en het coördineren met ingenieurs en projectleiders. 
-              Zorgde voor een efficiënte opvolging van projecten en leverde tekeningen 
-              die klaar waren voor fase aanbesteding.
-        </p>
-        <ul>
-             <li>Uittekenen van 2D- en 3D-tekeningen</li>
-             <li>Aanmaken van HVAC- en sanitairschema’s</li>
-            <li>Modelleren in BIM (sanitair, HVAC, elektro)</li>
-            <li>Projectdocumentatie en coördinatie</li>
-            <li>Levering van uitvoeringsklare tekeningen</li>
-        </ul>
-    </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title ">Keukenmedewerker in AZ Klina, Brasschaat</h3>
+                <p class="card-text mt-4">
+                    Meehelpen in de ziekenhuiskeuken: maaltijdvoorbereiding, portioneren volgens dieetvoorschriften,
+                    keukenhygiëne, opruimwerk en teamwork voor kwalitatieve en tijdige patiëntenmaaltijden.
+                </p>
 
-    <div>
-        <h2>Bim Engineer bij Vinci Energies - Cegelec, Zwijndrecht</h2>
-        <p> BIM Engineer bij Vinci Energies – Cegelec in Zwijndrecht, 
-            verantwoordelijk voor het automatiseren van BIM-processen binnen HVAC- en elektro-projecten.
-            Ontwikkelde een geavanceerde applicatie waarmee kanaaldelen kunnen worden besteld op basis van BIM-modellen.Optimaliseerde workflow-processen, verhoogde de nauwkeurigheid en versnelling in materiaalbestellingen 
-            en droeg actief bij aan efficiënte digitale projectuitvoering binnen het team.</p>
-    </div>
+            </div>
+        </div>
 
 
 
-   </main>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title ">Technische tekenaar bij JGL Engineering, Hove (Hvac + Sanitair+ Elektro)</h3>
+                <p class="card-text mt-4">
+                    Technische tekenaar bij JGL Engineering in Hove, gespecialiseerd in HVAC-, sanitaire en elektrische
+                    installaties. Verantwoordelijk voor het uitwerken van nauwkeurige 2D- en 3D-tekeningen, het
+                    voorbereiden
+                    van projectdocumentatie, en het coördineren met ingenieurs en projectleiders.
+                    Zorgde voor een efficiënte opvolging van projecten en leverde tekeningen
+                    die klaar waren voor fase aanbesteding.
+                </p>
+                <ul>
+                    <li>Uittekenen van 2D- en 3D-tekeningen</li>
+                    <li>Aanmaken van HVAC- en sanitairschema’s</li>
+                    <li>Modelleren in BIM (sanitair, HVAC, elektro)</li>
+                    <li>Projectdocumentatie en coördinatie</li>
+                    <li>Levering van uitvoeringsklare tekeningen</li>
+                </ul>
 
-    <footer>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h3 class="card-title ">Bim Engineer bij Vinci Energies - Cegelec, Zwijndrecht</h3>
+                <p class="card-text mt-4">
+                    BIM Engineer bij Vinci Energies – Cegelec in Zwijndrecht,
+                    verantwoordelijk voor het automatiseren van BIM-processen binnen HVAC- en elektro-projecten.
+                    Ontwikkelde een geavanceerde applicatie waarmee kanaaldelen kunnen worden besteld op basis van
+                    BIM-modellen.Optimaliseerde workflow-processen, verhoogde de nauwkeurigheid en versnelling in
+                    materiaalbestellingen
+                    en droeg actief bij aan efficiënte digitale projectuitvoering binnen het team.
+                </p>
+
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center text-muted mt-5">
         <p>© 2025 Suluxan Thevarajah | All Rights Reserved</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
