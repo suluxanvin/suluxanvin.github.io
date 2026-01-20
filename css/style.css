@@ -37,3 +37,9 @@ body {
         font-size: 1em;       /* smaller text on mobile */
     }
 }
+
+.skills-logo {
+    width: 100px;      /* set a fixed width */
+    height: auto;      /* keep aspect ratio */
+    object-fit: contain; /* ensures the image scales correctly */
+}
