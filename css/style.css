@@ -14,3 +14,26 @@ body {
 
 /* Make nav links a little bolder */
 .navbar .nav-link { font-weight: 600; }
+
+
+#hobbyCarousel .carousel-item img {
+    height: 350px;           
+    width: 100%;             
+    object-fit: cover;        
+    object-position: center;  
+    border-radius: 8px;      
+}
+
+#hobbyCarousel .carousel-caption .carousel-text {
+    font-weight: bold;
+    color: black !important;
+    font-size: 2em;           /* large text for desktop */
+    text-shadow: none !important;
+}
+
+/* Smaller font for small screens */
+@media (max-width: 768px) {
+    #hobbyCarousel .carousel-caption .carousel-text {
+        font-size: 1em;       /* smaller text on mobile */
+    }
+}

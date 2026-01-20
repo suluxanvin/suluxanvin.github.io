@@ -1,54 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suluxan | Hobbies</title>
 
-    <style>
-        body{
-            font-family: arial,sans-serif;
-              padding: 0;
-            background-color: #f8f9fa;
-           color: #3d3c3c;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
-        header{
-            background-color: #055fd4;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-radius:20px;
-            margin: 20px;
-        }
-
-        .menu a{
-            color: white;
-            margin: 0 10px; 
-            text-decoration: none;
-            max-width: 900px;
-            font-weight: bold;
-        }
-        .menu a:hover,
-        .menu a.active{
-            text-decoration: underline ;
-        }
-       .hobbypara p{
-            padding-bottom: 20px;
-            font-size: 20px;
-        }
-
-      footer{
-            text-align: center;
-            background-color: #055fd4 ;
-            color: white;
-            height: 25px; 
-            margin-top: 100px;
-    
-        }
-
-
-    </style>
 
 
 </head>
@@ -57,42 +18,203 @@
 
 
 <body>
-    
+
     <header>
-        <h1>Hobbies</h1>
-        <div class="menu">
-            
-            <a href="index.html" >Home </a>
-            <a href="cv.html"> CV </a>
-            <a href="experience.html"> Ervaringen </a>
-            <a href="hobbies.html" class="active"> Hobbies </a>
-            <a href="contact.html"> Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Suluxan Thevarajah</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+                    aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarmenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Ervaringen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+
+        <h2 class="mb-2">Hobbies</h2>
+
+        <p> Ik geloof dat hobby’s een belangrijk onderdeel zijn van een gezond en evenwichtig leven. Ze helpen me
+            ontspannen na een drukke dag, verbeteren mijn creativiteit en houden mijn geest actief. In de loop der jaren
+            heb ik veel activiteiten uitgeprobeerd, maar een paar daarvan zijn een betekenisvol onderdeel van mijn
+            dagelijkse routine geworden. Mijn belangrijkste hobby’s zijn lezen, reizen en naar muziek luisteren. Elke
+            hobby leert me iets nieuws en geeft kleur aan mijn leven.
+
+        </p>
+
+
+        <div id="hobbyCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Icons/Hiriketiya_01.jpg" class="d-block w-100" alt="Hiriketiya_beach">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Hiriketiya</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="Icons/Hiriketiya_02.jpg" class="d-block w-100" alt="Hiriketiya_beach">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Hiriketiya</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="Icons/ahangama.jpg" class="d-block w-100" alt="ahangama_beach">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Ahangama</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="Icons/Mirrisa.jpg" class="d-block w-100" alt="Mirrisa_beach">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Mirrisa</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img src="Icons/Gims02.jpg" class="d-block w-100" alt="Gims">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Gims</p>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="Icons/earth.jpg" class="d-block w-100" alt="Aarde">
+                    <div class="carousel-caption">
+                        <p class="carousel-text">Aarde</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hobbyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-   </header>
 
-   <main class="hobbypara">
-    <h2>Hobbies</h2>
+        <div class="mt-5">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title "><img src="Icons/icons8-swim-50.png " alt="swim Icons"> &nbsp;Zwemmen</h3>
+                    <p class="card-text mt-4 text-muted" style="text-align: justify;">
 
-    <p > Ik geloof dat hobby’s een belangrijk onderdeel zijn van een gezond en evenwichtig leven. Ze helpen me ontspannen na een drukke dag, verbeteren mijn creativiteit en houden mijn geest actief. In de loop der jaren heb ik veel activiteiten uitgeprobeerd, maar een paar daarvan zijn een betekenisvol onderdeel van mijn dagelijkse routine geworden. Mijn belangrijkste hobby’s zijn lezen, reizen en naar muziek luisteren. Elke hobby leert me iets nieuws en geeft kleur aan mijn leven. </p>
-   
-    <p > Zwemmen is ook een van mijn favoriete hobby’s. Ik ben geen professional; ik heb als amateur leren zwemmen in rivieren en in de zee in Sri Lanka. Later ben ik begonnen met freestyle-technieken, die ik zelf heb geleerd door instructievideo’s op YouTube te volgen. Nu probeer ik mijn techniek steeds professioneler te maken en regelmatig te oefenen. Zwemmen geeft mij een gevoel van vrijheid en ontspanning. Het water maakt mijn hoofd leeg, verbetert mijn conditie en zorgt ervoor dat ik me gelukkig en energiek voel. </p>
-   
-    <p > Muziek speelt een belangrijke rol in mijn leven.
-        Ik luister elke dag naar muziek — tijdens het werken, studeren of ontspannen. 
-        Mijn favoriete genres zijn pop, klassiek en softrock. 
-        Muziek helpt me gefocust te blijven tijdens het werk en motiveert me wanneer ik sport.
-        Ik geloof dat muziek mensen met elkaar verbindt, voorbij taal en cultuur. </p>
+                        Zwemmen is een van mijn favoriete hobby’s. Ik ben geboren op een eiland, waardoor ik van jongs
+                        af
+                        aan een sterke band met water heb ontwikkeld.
+                        Ik ben geen professional, maar ik heb als amateur leren zwemmen in rivieren en in de zee in Sri
+                        Lanka.
+                    </p>
 
-    <p >Naast mijn belangrijkste hobby’s kijk ik ook graag naar educatieve documentaires. 
-        Ik ben vooral geïnteresseerd in films over de natuur op onze planeet — van het ijskoude Antarctica 
-        tot de uitgestrekte wildernis van Siberië. Daarnaast kijk ik graag documentaires over de ruimte en het universum. Dat fascineert mij enorm. Onderwerpen zoals zwarte gaten, verre sterrenstelsels en planeten die lijken op de aarde vind ik bijzonder spannend. Het idee dat er misschien ergens anders leven kan bestaan, maakt mij nieuwsgierig om nog meer te leren. Soms lees ik artikelen of kijk ik extra video’s om beter te begrijpen hoe het heelal werkt en welke geheimen het nog verbergt. Deze documentaires 
-        helpen mij niet alleen ontspannen, maar laten mij ook dromen over de wonderen buiten onze wereld.</p>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        Toen ik daar woonde, ging ik bijna elk weekend zwemmen, behalve tijdens de moessonperiode. In
+                        die
+                        periode gingen we vaak met vrienden naar meren.
+                        Dat was nog leuker, vooral wanneer het hard regende. Het gaf een uniek en avontuurlijk gevoel.
+                    </p>
 
-   </main>
+                    <p class="card-text text-muted" style="text-align: justify;">
+                        Later begon ik met freestyle-technieken, die ik mezelf aanleerde via instructievideo’s op
+                        YouTube.
+                        Nu probeer ik mijn techniek steeds verder te verbeteren door regelmatig te oefenen.
+                    </p>
 
-    <footer>
+                    <p class="card-text fw-semibold  mt-4">
+                        Zwemmen geeft mij vrijheid, ontspanning en nieuwe energie.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title "><img src="Icons/icons8-music-note-48.png" alt="Muziek icons"> &nbsp; Muziek
+                    </h3>
+                    <p class="card-text mt-4 text-muted" style="text-align: justify;">
+                        Muziek speelt een belangrijke rol in mijn leven.Ik luister elke dag naar muziek tijdens het
+                        werken,
+                        studeren of ontspannen.Daarnaast ben ik ook
+                        gek op Franse liedjes, ook al begrijp ik de
+                        teksten meestal niet. Toch voel ik de emotie en de sfeer in de muziek.
+                        Mijn favoriete genres zijn pop, klassiek en softrock.
+
+                    </p>
+
+                    <p class="card-text mt-4 text-muted" style="text-align: justify;">
+                        Muziek helpt me gefocust te blijven tijdens het werk en motiveert me wanneer ik sport.
+                        Ik geloof dat muziek mensen met elkaar verbindt, voorbij taal en cultuur.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h3 class="card-title "><img src="Icons/icons8-documentary-50.png" alt="documentaires icons">&nbsp;
+                        Educatieve documentaires</h3>
+                    <p class="card-text mt-4 text-muted" style="text-align: justify;">
+                        Naast mijn belangrijkste hobby’s kijk ik ook graag naar educatieve documentaires.
+                        Ik ben vooral geïnteresseerd in films over de natuur op onze planeet — van het ijskoude
+                        Antarctica
+                        tot de uitgestrekte wildernis van Siberië.
+                    </p>
+
+                    <p class="text-muted" style="text-align: justify;">
+                        Daarnaast kijk ik graag documentaires over de ruimte en
+                        het
+                        universum. Dat fascineert mij enorm. Onderwerpen zoals zwarte gaten, verre sterrenstelsels en
+                        planeten die
+                        lijken op de aarde vind ik bijzonder spannend. Het idee dat er misschien ergens anders leven kan
+                        bestaan,
+                        maakt mij nieuwsgierig om nog meer te leren. Soms lees ik artikelen of kijk ik extra video’s om
+                        beter te
+                        begrijpen hoe het heelal werkt en welke geheimen het nog verbergt. Deze documentaires
+                        helpen mij niet alleen ontspannen, maar laten mij ook dromen over de wonderen buiten onze
+                        wereld.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer class="text-center text-muted mt-5">
         <p>© 2025 Suluxan Thevarajah | All Rights Reserved</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    
 </body>
+
 </html>

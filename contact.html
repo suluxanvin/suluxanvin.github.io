@@ -1,88 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suluxan|Contact</title>
 
-  <style>
-        body{
-            font-family: Arial, sans-serif;
-          
-            padding: 0;
-            background-color: #f8f9fa;
-           color: #3d3c3c;
-        }
-        header{
-             background-color: #055fd4;
-             color: white;
-             text-align: center;
-             padding: 20px;
-            border-radius:20px;
-            margin: 20px;
-          
-         
-        }
-        main{
-
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-
-        .menu a{
-            
-            color: white;
-            margin: 0 10px; 
-            text-decoration: none;
-            font-weight: bold;
-
-        }
-
-        .menu a:hover,
-        .menu a.active{
-            text-decoration: underline ;
-        }
-
-      form{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 15px;
-      }
-
-        input,
-        textarea,
-        button {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: #004aad;
-            color: white;
-            cursor: pointer;
-        }
-
-          button:hover {
-            background-color: #0066ff;
-        }
-
-
-
-        footer{
-            text-align: center;
-            background-color: #055fd4;
-            color: white;
-           
-            margin-top: 100px;
-    
-        }
-
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 
 
 
@@ -90,48 +16,107 @@
 
 
 <body>
-    
+
     <header>
-        <h1>Contact Gegevens</h1>
-        <div class="menu">
-            
-            <a href="index.html" >Home </a>
-            <a href="cv.html"> CV </a>
-            <a href="experience.html"> Ervaringen </a>
-            <a href="hobbies.html" > Hobbies </a>
-            <a href="contact.html" class="active"> Contact</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Suluxan Thevarajah</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+                    aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarmenu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Ervaringen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="hobbies.html">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <h2>Neem Contact Op</h2>
-        <p>Als u contact met mij wilt opnemen, gebruik dan het onderstaande formulier.</p>
+    <main class="container my-5">
 
-        <form>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+        <div class="row justify-content-center">
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+            <div class="col-12 col-md-8 col-lg-6">
 
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject">
+                <h2>Neem Contact Op</h2>
+                <p>Als u contact met mij wilt opnemen, gebruik dan het onderstaande formulier.</p>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-         <h3>Other Ways to Reach Me</h3>
-        <ul>
-            <li>Email: suluxant@gmail.com</li>
-            <li>Gsm : 0497/64 07 62</li>
-        </ul>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="Voornaam" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="Voornaam">
+                        <div id="Voornaam" class="form-text"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Achternaam" class="form-label">Achternaam</label>
+                        <input type="text" class="form-control" id="Achternaam">
+                        <div id="Achternaam" class="form-text"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                        <div id="Email" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password" class="form-label">Password</label>
+                        <input type="Password" class="form-control" id="Password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="question" class="form-label">Question</label>
+                        <textarea id="question" name="question" class="form-control" rows="5" required></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+                <h3>Other Ways to Reach Me</h3>
+                <ul>
+                    <li>Email: suluxant@gmail.com</li>
+                    <li>Gsm : 0497/64 07 62</li>
+                </ul>
+
+
+            </div>
+
+
+
+
+        </div>
+
 
     </main>
-    <footer>
+    <footer class="text-center text-muted mt-5">
         <p>© 2025 Suluxan Thevarajah | All Rights Reserved</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
 </body>
-</html> 
+
+</html>
